@@ -1,7 +1,6 @@
 # SwiftNotes
 ## Motivation
-As current musicians, one of our big
-gest chalenges when it comes to playing and preforming music is the act of flipping to the next page. The fact is, most of the time these flips are not possible without a small pause or having another player that's sole purpose is to turn pages. This is ineffient and distractig to the musician, not giving them the oppportunity to fully express their talents. This inspired us to build this project, because we knew there was a better way.
+As current musicians, one of our biggest chalenges when it comes to playing and preforming music is the act of flipping to the next page. The fact is, most of the time these flips are not possible without a small pause or having another player that's sole purpose is to turn pages. This is ineffient and distractig to the musician, not giving them the oppportunity to fully express their talents. This inspired us to build this project, because we knew there was a better way.
 
 ## How We Built It
 SwiftNotes uses a mobile application to take inputs from user about the song (i.e. time signature, number of beats, and tempo) and calculates the estimated time between page flips when it is time for a flip, the application sends a signal to a Bluetooth module connected to the main Arduino board. As back-up, SwiftNotes uses audio and pressure sensors (via a pedal) to also act as a trigger for a page flip. The user simply steps of a pedal or says "flip" into the mic to trigger a flip. These options will be dependent on the type of instrument played (eg. woodwind players can not use the mic and piano players cannot use the pedal.) When a flip is signalled via the methods above, the Arduino runs a series of motor movements to flip a page.
