@@ -40,7 +40,7 @@ Servo servoD;  // servo moter (at the buttom) for page flipping
 Servo servoU; // servo moter (at the top) to control another motor
 int pos = 0;    // variable to store the servo position
 int posU = 0;
-int biMotorEn = 4;
+int biMotorEn = 4; 
 bool isDown = false;  // variable to decide if the function upmotor is true of false
 bool isRight = true;
 bool rightF = false;
